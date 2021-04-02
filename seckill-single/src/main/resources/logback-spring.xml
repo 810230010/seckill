@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <!--指定property属性变量-->
+    <property name="log.path" value="/logs/seckill"/>
+
+    <!-- 日志输出格式
+     %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n
+     -->
+    <!-- 控制台 appender-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+
+
+
+
+    <!-- root 级别的配置 -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+
+    <!--可输出mapper层sql语句等-->
+    <logger name="com.huajia.seckill.single.dao" level="debug">
+    </logger>
+
+    <!--输出jdbc 事务相关信息-->
+    <logger name="org.springframework.jdbc" level="debug">
+    </logger>
+
+
+</configuration>

@@ -10,7 +10,6 @@
     </parent>
 
     <name>seckill-order</name>
-    <groupId>com.huajia.seckill</groupId>
     <artifactId>seckill-order</artifactId>
     <version>1.0-SNAPSHOT</version>
 

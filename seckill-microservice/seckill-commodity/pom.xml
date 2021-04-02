@@ -10,7 +10,6 @@
     </parent>
 
     <name>seckill-commodity</name>
-    <groupId>com.huajia.seckill</groupId>
     <artifactId>seckill-commodity</artifactId>
     <version>1.0-SNAPSHOT</version>
 

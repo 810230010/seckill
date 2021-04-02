@@ -9,10 +9,13 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
+    <modules>
+        <module>seckill-commodity</module>
+        <module>seckill-order</module>
+    </modules>
     <packaging>pom</packaging>
 
     <name>seckill-microservice</name>
-    <groupId>com.huajia.seckill</groupId>
     <artifactId>seckill-microservice</artifactId>
     <version>1.0-SNAPSHOT</version>
 

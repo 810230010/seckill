@@ -10,11 +10,42 @@
     </parent>
 
     <name>seckill-web</name>
-    <groupId>com.huajia.seckill</groupId>
     <artifactId>seckill-web</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
+        <dependency>
+            <groupId>com.huajia.seckill</groupId>
+            <artifactId>seckill-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huajia.seckill</groupId>
+            <artifactId>seckill-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+        </dependency>
+        <!--zookeeper原生API，经常会发生session expire异常。此依赖可以解决这个问题-->
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.javassist </groupId>
+            <artifactId>javassist </artifactId>
+        </dependency>
     </dependencies>
 </project>
